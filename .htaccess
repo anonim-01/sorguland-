@@ -1,0 +1,149 @@
+Options -indexes
+Options +FollowSymlinks
+
+RewriteEngine On 
+RewriteCond %{HTTP_USER_AGENT} ^BlackWidow [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Bot\ mailto:craftbot@yahoo.com [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^ChinaClaw [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Custo [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^DISCo [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Download\ Demon [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^eCatch [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^EirGrabber [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^EmailSiphon [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^EmailWolf [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Express\ WebPictures [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^ExtractorPro [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^EyeNetIE [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^FlashGet [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^GetRight [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^GetWeb! [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Go!Zilla [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Go-Ahead-Got-It [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^GrabNet [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Grafula [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^HMView [OR] 
+RewriteCond %{HTTP_USER_AGENT} HTTrack [NC,OR] 
+RewriteCond %{HTTP_USER_AGENT} CyotekWebCopy [NC,OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Image\ Stripper [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Image\ Sucker [OR] 
+RewriteCond %{HTTP_USER_AGENT} Indy\ Library [NC,OR] 
+RewriteCond %{HTTP_USER_AGENT} ^InterGET [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Internet\ Ninja [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^JetCar [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^JOC\ Web\ Spider [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^larbin [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^LeechFTP [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Mass\ Downloader [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^MIDown\ tool [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Mister\ PiX [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Navroad [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^NearSite [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^NetAnts [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^NetSpider [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Net\ Vampire [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^NetZIP [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Octopus [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Offline\ Explorer [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Offline\ Navigator [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^PageGrabber [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Papa\ Foto [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^pavuk [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^pcBrowser [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^RealDownload [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^ReGet [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^SiteSnagger [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^SmartDownload [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^SuperBot [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^SuperHTTP [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Surfbot [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^tAkeOut [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Teleport\ Pro [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^VoidEYE [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Web\ Image\ Collector [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Web\ Sucker [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebAuto [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebCopier [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebFetch [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebGo\ IS [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebLeacher [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebReaper [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebSauger [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Website\ eXtractor [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Website\ Quester [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebStripper [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebWhacker [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WebZIP [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Wget [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Widow [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^WWWOFFLE [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider [OR] 
+RewriteCond %{HTTP_USER_AGENT} ^Zeus 
+RewriteRule ^.* - [F,L]
+
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^/?panel /pages/index.php
+RewriteRule ^/?logout /pages/logout.php
+RewriteRule ^/?adsoyadsorgu /pages/adsoyadsorgu.php
+RewriteRule ^/?kisiuretici /pages/kisiuretici.php
+RewriteRule ^/?kimlikolusturucu /pages/kimlikolusturucu.php
+RewriteRule ^/?paketler /pages/paketler.php
+RewriteRule ^/?sms /pages/sms.php
+RewriteRule ^/?soyagacisorgu /pages/soyagacisorgu.php
+RewriteRule ^/?tcsorgu /pages/tcsorgu.php
+RewriteRule ^/?facebooksorgu /pages/facebooksorgu.php
+RewriteRule ^/?ttnetsorgu /pages/ttnetsorgu.php
+RewriteRule ^/?mernis2015 /pages/mernis2015.php
+RewriteRule ^/?2015tc /pages/2015tc.php
+RewriteRule ^/?2015adres /pages/2015adres.php
+RewriteRule ^/?ailesorgu /pages/ailesorgu.php
+RewriteRule ^/?gsmfatura /pages/gsmfatura.php
+RewriteRule ^/?binchecker /pages/binchecker.php
+RewriteRule ^/?dnschecker /pages/dnschecker.php
+RewriteRule ^/?mahallesorgu /pages/mahallesorgu.php
+RewriteRule ^/?sokaksorgu /pages/sokaksorgu.php
+RewriteRule ^/?binasorgu /pages/binasorgu.php
+RewriteRule ^/?dairesorgu /pages/dairesorgu.php
+RewriteRule ^/?uschecker /pages/uschecker.php
+RewriteRule ^/?users /pages/users.php
+RewriteRule ^/?iban /pages/iban.php
+RewriteRule ^/?bina /pages/bina.php
+RewriteRule ^/?adduser /pages/adduser.php
+RewriteRule ^/?notice /pages/notice.php
+RewriteRule ^/?tcgsm /pages/tcgsm.php
+RewriteRule ^/?gsmtc /pages/gsmtc.php
+RewriteRule ^/?gsmpro /pages/gsmpro.php
+RewriteRule ^/?adres /pages/adres.php
+RewriteRule ^/?ikametgahv2 /pages/adres2.php
+RewriteRule ^/?ipsorgu /pages/ipsorgu.php
+RewriteRule ^/?vesikasorgu /pages/vesika.php
+RewriteRule ^/?tcokul /pages/okul.php
+RewriteRule ^/?tcisyeri /pages/isyeri.php
+RewriteRule ^/?gsmisim /pages/gsmisim.php
+RewriteRule ^/?ihbar /pages/egm.php
+RewriteRule ^/?anneailesorgu /pages/anneailesorgu.php
+RewriteRule ^/?babaailesorgu /pages/babaailesorgu.php
+RewriteRule ^/?annesorgu /pages/annesorgu.php
+RewriteRule ^/?babasorgu /pages/babasorgu.php
+RewriteRule ^/?godsorgu /pages/godnesssorgu.php
+RewriteRule ^/?okulnosorgu /pages/okulnosorgu.php
+RewriteRule ^/?ehliyetsorgu /pages/ehliyet.php
+RewriteRule ^/?myaccount /pages/myaccount.php
+RewriteRule ^/?serino /pages/serino.php
+RewriteRule ^/?ininal /pages/ininal.php
+RewriteRule ^/?plakasorgu /pages/plakasorgu.php
+RewriteRule ^/?akrabasorgu /pages/akrabasorgu.php
+RewriteRule ^/?parselsorgu /pages/parselsorgu.php
+
+RewriteRule ^login/([0-9a-zA-Z-_]+)? pages/login.php?alert=$1 [L,QSA]
+RewriteRule ^edituser/([0-9]+)? pages/edituser.php?id=$1 [L,QSA]
+
+ErrorDocument 403 https://%{HTTP_HOST}
+ErrorDocument 404 https://%{HTTP_HOST}
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+

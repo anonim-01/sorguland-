@@ -1,0 +1,202 @@
+/* Genel stil */
+body {
+    background-color: #010409 !important;
+}
+
+/* Sayfa kenar çubuğu */
+.page-sidebar {
+    background-color: #010409 !important;
+    border-right: 1px solid #2d2d3f;
+}
+
+/* Tablo stilleri */
+table.dataTable thead th,
+thead>tr>th {
+    color: #c9d1d9 !important;
+    text-transform: capitalize;
+}
+
+th {
+    color: #9A9CAB !important;
+    font-weight: 500 !important;
+    font-family: Poppins !important;
+}
+
+tbody>tr>td {
+    color: #9a9cab !important;
+}
+
+/* Giriş alanları ve formlar */
+input,
+select,
+textarea {
+    background-color: transparent !important;
+    color: #c9d1d9;
+    border: 1px solid #30363d !important;
+    border-color: #2d2d3f !important;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: inherit;
+}
+
+input:focus {
+    box-shadow: none !important;
+    border: 0.1vh solid #2f81f7 !important;
+}
+
+select:focus,
+textarea:focus {
+    box-shadow: none !important;
+    border: 1px solid #2f81f7 !important;
+}
+
+/* Butonlar */
+button {
+    opacity: 0.9;
+    padding: 10px 20px;
+    background-color: #2d2d3f;
+    color: #c9d1d9;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Hr çizgileri */
+hr {
+    background-color: #2d2d3f !important;
+    opacity: 1;
+}
+
+/* Açılır menü */
+.dropdown-menu {
+    border-color: #2d2d3f !important;
+}
+
+/* Swal2 popup */
+.swal2-popup {
+    background-color: #010409 !important;
+}
+
+.swal2-title {
+    color: #C9D1D9 !important;
+}
+
+.swal2-html-container {
+    color: #9A9CAB !important;
+}
+
+/* Sayfalama linkleri */
+.page-link {
+    border-color: #2d2d3f;
+    background-color: transparent;
+    box-shadow: none !important;
+}
+
+.page-item.active .page-link,
+.page-item.disabled .page-link {
+    border-color: #2d2d3f;
+    background-color: transparent;
+    opacity: 0.8;
+}
+
+/* Profil açılır menüsü */
+.profile-drop-menu {
+    background-color: #010409 !important;
+    border: 1px solid #30363d;
+}
+
+.profile-drop-menu :hover {
+    opacity: 0.8;
+    color: #9a9cab;
+}
+
+/* Toast mesajları */
+#toast-container>div {
+    box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 3%);
+    opacity: 1;
+    font-size: 14px;
+    padding: 18px;
+    width: 300px;
+}
+
+.toast-message {
+    text-align: left;
+    margin-left: 3.5vh;
+}
+
+.toast {
+    position: relative;
+    pointer-events: auto;
+    overflow: hidden;
+    margin: 0 0 6px;
+    padding: 15px 15px 15px 50px;
+    width: 300px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    -moz-box-shadow: 0 0 12px #999999;
+    -webkit-box-shadow: 0 0 12px #999999;
+    box-shadow: 0 0 12px #999999;
+    color: #FFFFFF;
+    opacity: 1 !important;
+    box-shadow: none !important;
+    padding: 50px;
+
+}
+
+.toast-success {
+    background-color: #51A351 !important;
+    border: none !important;
+}
+
+.toast-error {
+    background-color: #BD362F !important;
+    color: #fff !important; 
+    border: none !important;
+}
+
+/* Kaydırma çubukları */
+body::-webkit-scrollbar {
+    width: 0.7em;
+    background-color: #010409;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2d2d3f;
+    border-radius: 5px;
+}
+
+/* Diğer stiller */
+p,
+li {
+    color: #9a9cab !important;
+    font-size: small;
+}
+
+.page-sidebar .accordion-menu li ul li a,
+.page-sidebar .accordion-menu li ul li a {
+    font-size: small;
+}
+
+::placeholder {
+    color: #a6a6a6 !important;
+}
+
+/* Tabletler için stil */
+@media (max-width: 768px) {
+    body{
+        padding: 15px;
+    }
+    .nw button{
+        margin: 5px;
+    }
+}
+
